@@ -1,9 +1,33 @@
 # cocos-creator-examples
 cocos creator 一些使用实例
 
+
+# [shader_animation](./shader_animation) 
+
+
+cocos creator v2.3.3  
+
+### loading 动画
+
+[图文讲解](https://mp.weixin.qq.com/s/QhKzmtpwiQgOzsGPcBHSJQ)   
+[视频讲解](https://b23.tv/BV1eg4y1873u)   
+
+![](./img/shader_animation.gif)  
+
+
+## [attacked](./attacked) 
+
+[攻击闪白效果，shader入门](http://lamyoung.com/cocos-creator/2020/03/31/ccc-attacked/)  
+
+cocos creator v2.2.2 
+
+![](./img/attacked.gif)  
+
+
+
 ## [water](./water)
 
-欢乐水杯(happay glass)的流体实现！
+[欢乐水杯(happay glass)的流体实现！](https://mp.weixin.qq.com/s/8Kz0l46YWxcx6cLukAnt9w)  
 
 cocos creator v2.2.2 
 

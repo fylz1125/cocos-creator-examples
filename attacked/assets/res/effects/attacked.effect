@@ -13,6 +13,7 @@ CCEffect %{
       properties:
         texture: { value: white }
         alphaThreshold: { value: 0.5 }
+        addColor: { value: [0.8, 0.8, 0.8, 0.8] }
 }%
 
 
@@ -53,15 +54,19 @@ CCProgram vs %{
 
 CCProgram fs %{
   precision highp float;
+  
+  #include <alpha-test>
 
   in vec4 v_color;
-
-  #include <alpha-test>
 
   #if USE_TEXTURE
   in vec2 v_uv0;
   uniform sampler2D texture;
   #endif
+
+  uniform LAMYOUM_COM{
+    vec4 addColor;
+  }
 
   void main () {
     vec4 o = vec4(1, 1, 1, 1);
@@ -76,7 +81,9 @@ CCProgram fs %{
     o *= v_color;
 
     ALPHA_TEST(o);
-    o.a = 1.0;
+
+    o.rgb = o.rgb + addColor.rgb;
+
     gl_FragColor = o;
   }
 }%
