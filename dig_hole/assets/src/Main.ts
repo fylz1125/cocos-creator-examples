@@ -25,6 +25,8 @@ export default class Main extends cc.Component {
     private _regions: number[][][] = [];
 
     onLoad() {
+        cc.macro.ENABLE_MULTI_TOUCH = false;
+
         cc.director.getPhysicsManager().enabled = true;
         // 开启物理步长的设置
         cc.director.getPhysicsManager().enabledAccumulator = true;
@@ -46,7 +48,7 @@ export default class Main extends cc.Component {
 
         this.graphics.node.on(cc.Node.EventType.TOUCH_START, this._touchMove, this);
         this.graphics.node.on(cc.Node.EventType.TOUCH_MOVE, this._touchMove, this);
- 
+
     }
 
     start() {
@@ -132,11 +134,11 @@ export default class Main extends cc.Component {
         });
         const comb = PolyBool.combine(seg1, seg2);
         const result = PolyBool.polygon(PolyBool.selectDifference(comb));
- 
+
         this._regions = result.regions;
         this._optimizeRegions();
         this.draw();
- 
+
     }
 
     reset() {
@@ -170,7 +172,9 @@ export default class Main extends cc.Component {
             });
 
             poly.enabled = true;
+            // poly['apply']();
             enabled_chains_points[index] = poly.points;
+
         }
 
         this.graphics.clear(true);
@@ -224,3 +228,17 @@ export default class Main extends cc.Component {
 
 }
 // 欢迎关注微信公众号[白玉无冰]
+
+/** 
+
+优化篇原文:  https://mp.weixin.qq.com/s/4lFv9p346yEg_PSOwN0WKw  
+优化篇视频:  https://b23.tv/BV1GV411d7eq  
+
+实现篇:  https://mp.weixin.qq.com/s/Xcf-WPaqiIo-ef6O_IITFg   
+实现篇视频讲解  https://b23.tv/BV1jz411z7w1   
+在线体验:  http://lamyoung.gitee.io/web/dig_hole/   
+
+qq 交流群
+859642112
+
+*/

@@ -1,9 +1,48 @@
 # cocos-creator-examples
-cocos creator 一些使用实例
+
+cocos creator 一些使用实例 (刚体挖洞/流体效果/shader)
+
+欢迎关注微信公众号 `白玉无冰`
+
+![](./img/about.jpg)
 
 
-# [shader_animation](./shader_animation) 
+author: http://lamyoung.com/  
+B站视频: https://space.bilibili.com/1756070/video  
+github: https://github.com/baiyuwubing  
+qq 交流群: 859642112  
 
+
+## [dig_hole](./dig_hole) 
+
+cocos creator v2.3.3  
+
+
+### 多边形刚体挖洞
+
+Main_poly.fire
+
+![](./img/dig_hole_poly.gif)
+
+图文讲解: https://mp.weixin.qq.com/s/jxKeM2Ah5UHlGTryksdr6Q   
+
+### 链条挖洞 
+
+Main.fire
+
+物理挖洞！涂抹地形! 优化篇来了！图文！视频！源码！通通来了！
+
+优化篇原文:  https://mp.weixin.qq.com/s/4lFv9p346yEg_PSOwN0WKw  
+优化篇视频:  https://b23.tv/BV1GV411d7eq  
+
+实现篇:  https://mp.weixin.qq.com/s/Xcf-WPaqiIo-ef6O_IITFg   
+实现篇视频讲解  https://b23.tv/BV1jz411z7w1   
+在线体验:  http://lamyoung.gitee.io/web/dig_hole/   
+
+![](./img/dig_hole.gif)
+
+
+## [shader_animation](./shader_animation) 
 
 cocos creator v2.3.3  
 
@@ -167,8 +206,28 @@ cocos creator v2.0.8
 
 ---
 
-qq 交流群
 
-859642112
 
-![](./img/about.jpg)
+```
+/*
+█████████████████████████████████████
+█████████████████████████████████████
+████ ▄▄▄▄▄ █▀█ █▄██▀▄ ▄▄██ ▄▄▄▄▄ ████
+████ █   █ █▀▀▀█ ▀▄▀▀▀█▄▀█ █   █ ████
+████ █▄▄▄█ █▀ █▀▀▀ ▀▄▄ ▄ █ █▄▄▄█ ████
+████▄▄▄▄▄▄▄█▄▀ ▀▄█ ▀▄█▄▀ █▄▄▄▄▄▄▄████
+████▄▄  ▄▀▄▄ ▄▀▄▀▀▄▄▄ █ █ ▀ ▀▄█▄▀████
+████▀ ▄  █▄█▀█▄█▀█  ▀▄ █ ▀ ▄▄██▀█████
+████ ▄▀▄▄▀▄ █▄▄█▄ ▀▄▀ ▀ ▀ ▀▀▀▄ █▀████
+████▀ ██ ▀▄ ▄██ ▄█▀▄ ██▀ ▀ █▄█▄▀█████
+████   ▄██▄▀ █▀▄▀▄▀▄▄▄▄ ▀█▀ ▀▀ █▀████
+████ █▄ █ ▄ █▀ █▀▄█▄▄▄▄▀▄▄█▄▄▄▄▀█████
+████▄█▄█▄█▄█▀ ▄█▄   ▀▄██ ▄▄▄ ▀   ████
+████ ▄▄▄▄▄ █▄██ ▄█▀  ▄   █▄█  ▄▀█████
+████ █   █ █ ▄█▄ ▀  ▀▀██ ▄▄▄▄ ▄▀ ████
+████ █▄▄▄█ █ ▄▄▀ ▄█▄█▄█▄ ▀▄   ▄ █████
+████▄▄▄▄▄▄▄█▄██▄▄██▄▄▄█████▄▄█▄██████
+█████████████████████████████████████
+█████████████████████████████████████
+*/
+```
